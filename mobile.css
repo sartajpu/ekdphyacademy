@@ -1,0 +1,199 @@
+@media (max-width: 760px) {
+  .navbar { 
+    flex-direction: row; 
+    gap: 15px; 
+    padding: 15px 10px; 
+  }
+  .navbar h1 { 
+    font-size: 20px; 
+    text-align: center; 
+    line-height: 1.2; 
+    letter-spacing: 0.5px; 
+  }
+  h4{
+    margin-top: 2px;
+    font-size: 10px;
+  }
+
+  /* menu and buttons */
+  .slide { 
+    position: relative; 
+  }
+  .menu-toggle { 
+    display: block; 
+    z-index: 1000; 
+    cursor: pointer;
+  }
+  .navbar-button { 
+    display: flex; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgb(13, 49, 168); 
+    flex-direction: column; 
+    transform: translateX(-100%); 
+    transition: transform 0.4s ease-in-out; 
+    z-index: 999; 
+  }
+  .navbar-button a { 
+    display: block; 
+    padding: 15px; 
+    border-bottom: 1px solid #444; 
+  }
+  .navbar-button.active-menu { 
+    transform: translateX(0); 
+  }
+
+  .adm-botton{
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 15px;
+        padding: 10px;
+        background: white;
+    }
+    /* image slide conatiner */
+    .slider-cont{
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+    }
+    .my-slide {
+        padding: 5px;
+        display: none; 
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    .my-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    /* Intro part */
+    .intro-text{
+      top: 20px;
+      margin: 30px;
+      font-size: 15px;
+    }
+    .introduce{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .intro-right{
+      width: 100%;
+      height: 200px;
+      gap: 5px;
+      padding: 10px;
+
+    }
+    .stats-card h2{
+      color: #000;
+      font-size: 40px;
+      margin-bottom: 3px;
+    }
+    .stats-card h3{
+      color: #000;
+      font-size: 30px;
+      margin-bottom: 2px;
+    }
+    .read-more-btn{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        background: rgb(0, 28, 119);
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border-radius: 50px;
+
+        width: 50%;
+        margin: 0 auto;
+        transition: all 0.2s ease;
+    }
+
+    /* about Us css start */
+    .about-photo{
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .achievements-text{
+      font-size: 20px;
+    }
+
+/* ===Syllabous Part CSS === */
+  /* ==========================================================================
+   MOBILE & TABLET RESPONSIVE VIEW (768px या उससे छोटी स्क्रीन के लिए)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* 1. पूरे सेक्शन की पैडिंग कम करें */
+    .services-section {
+        padding: 50px 15px;
+    }
+
+    /* 2. मुख्य हेडिंग का साइज मोबाइल के हिसाब से छोटा करें */
+    .services-header h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .services-header p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    /* 3. रोज़ (Rows) को ऊपर-नीचे (Vertical) सेट करें */
+    .service-row-master,
+    .service-row-master.alternate-flip {
+        flex-direction: column !important; /* इमेज ऊपर और टेक्स्ट नीचे आएगा */
+        margin-bottom: 25px;
+    }
+
+    /* 4. इमेज वाले हिस्से को मोबाइल पर फुल विड्थ दें */
+    .service-image-div {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 220px !important; /* मोबाइल पर इमेज की ऊंचाई */
+        height: 220px !important;
+    }
+
+    /* 5. टेक्स्ट वाले हिस्से को मोबाइल पर फुल विड्थ दें */
+    .service-text-div {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 25px 20px !important; /* मोबाइल पर गैप को ठीक करें */
+        align-items: center !important; /* कंटेंट को बीच में सेट करें */
+        text-align: center !important; /* टेक्स्ट को सेंटर करें */
+    }
+
+    /* 6. आइकॉन और हेडिंग को मोबाइल पर सेंटर अलाइन करें */
+    .service-icon {
+        margin-bottom: 15px;
+    }
+    .service-text-div h3 {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    .service-text-div p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+}
+
+
+
+
+
